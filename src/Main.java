@@ -29,5 +29,11 @@ public class Main {
         System.out.println("    b. Major Developments");
         System.out.println("    c. Key Figures");
         System.out.println("    d. The Future of Software");
+
+        System.out.println("4. Jokes");
+        System.out.println("    a. Your Mother Jokes");
+        System.out.println("    b. Dad Jokes");
+        System.out.println("    c. STEM Jokes");
+        System.out.println("    d. Knock-Knock Jokes");
     }
 }
