@@ -1,39 +1,31 @@
 import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
+
         Scanner sc = new Scanner(System.in);
+        Selections section = new Selections();
 
-        System.out.println("Hello! What is your name? Please enter below:");
-        String name = sc.nextLine();
-        System.out.println("Good afternoon " + name + "! It's really nice to meet you!");
-        System.out.println("My name is LJM\u00B2, I am the future of personal computing.");
+        //System.out.println("Hello! What is your name? Please enter below:");
+        // String name = sc.nextLine();
+        // System.out.println("Good afternoon " + name + "! It's really nice to meet you!");
+        //System.out.println("My name is LJM\u00B2, I am the future of personal computing.");
+        //System.out.println("Are you ready to take a journey into Computing History and More? Press the enter key to continue...");
+        //sc.nextLine();
 
-    }
+        FuncLists.funcListTop();
 
-    public static void funcList() {
-        System.out.println("1. First Generation Hardware");
-        System.out.println("    a. Generation Timeframe");
-        System.out.println("    b. Major Developments");
-        System.out.println("    c. Key Figures");
-        System.out.println("    d. Influence on the Future of Computing");
+        System.out.print("Please enter the number of your selection, followed by the enter key: ");
+        int mainSec = section.mainSel();
 
-        System.out.println("2. Fourth Generation Hardware");
-        System.out.println("    a. Generation Timeframe");
-        System.out.println("    b. Major Developments");
-        System.out.println("    c. Key Figures");
-        System.out.println("    d. Influence on the Future of Computing and Beyond");
+        section.subSection(mainSec);
 
-        System.out.println("3. Fifth Generation Software");
-        System.out.println("    a. Generation Timeframe");
-        System.out.println("    b. Major Developments");
-        System.out.println("    c. Key Figures");
-        System.out.println("    d. The Future of Software");
+        System.out.println("Thank you. Now, from the above list, please select the subsection you would like to explore,");
+        System.out.print("followed by the enter key: ");
 
-        System.out.println("4. Jokes");
-        System.out.println("    a. Your Mother Jokes");
-        System.out.println("    b. Dad Jokes");
-        System.out.println("    c. STEM Jokes");
-        System.out.println("    d. Knock-Knock Jokes");
+        int subSec = section.mainSel();
+
+
     }
 }
